@@ -1,23 +1,29 @@
 {
+  "defaultSeverity": "warning",
   "extends": [
-    "tslint-microsoft-contrib",
-    "tslint-config-prettier"
+    "tslint:recommended"
   ],
+  "jsRules": {},
   "rules": {
-    "interface-name": [true, "never-prefix"],
-    "mocha-no-side-effect-code": false,
-    "missing-jsdoc": false,
-    "no-relative-imports": false,
-    "export-name": false,
-    "promise-function-async": false,
-    "no-void-expression": false,
-    "prefer-type-cast": false,
-    "typedef": [
+    "semicolon": [
       true,
-      "parameter",
-      "arrow-parameter",
-      "property-declaration",
-      "member-variable-declaration"
-    ]
-  }
+      "never"
+    ],
+    "no-console": [
+      false,
+      "log"
+    ],
+    "trailing-comma": false,
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ],
+    "interface-name": [
+      false
+    ],
+    "object-literal-sort-keys": false,
+    "max-classes-per-file": false
+  },
+  "rulesDirectory": []
 }
