@@ -6,3 +6,10 @@ describe('Empty string', () => {
         expect(stringCalculator.add('')).toBe(0)
     })
 })
+
+describe('With one number', () => {
+    it('should return the same number', () => {
+        const stringCalculator = new StringCalculator()
+        expect(stringCalculator.add("2")).toBe(2)
+    });
+});
